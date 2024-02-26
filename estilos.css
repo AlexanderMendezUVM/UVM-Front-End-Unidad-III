@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section[id] {
+    scroll-margin-top: 60px;
+  }
+
+body{
+    font-family: sans-serif;
+    width: 99,9%;
+    height: 580px;
+    background-color: #FFFFFF;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.navfija{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5B9ACD;
+    z-index: 300;
+}
+
+.navfija .logo{
+    margin-left: 20px;
+}
+
+.navfija .opciones a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#FFFFFF;  
+    padding: 15px 15px;
+}
+
+.navfija .registro a{
+    margin-right: 40px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 9px;
+    border:none;
+    color:#5B9ACD;
+}
+
