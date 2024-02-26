@@ -50,3 +50,319 @@ header{
     color:#5B9ACD;
 }
 
+
+.principal{
+    height: 680px;
+    position: relative;
+    z-index: -10;
+}
+
+.bloque1 .fondo{
+    /*position: relative;*/
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    height: 500px;
+    /*background-image: url("./img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    margin-bottom: 0px;
+}
+
+.bloque1 .logoblanco{
+    position: absolute;
+    right: -40px;
+    top: -150px;
+    width: 400px;
+    height: 400px;
+}
+
+.bloque1 .mensaje{
+    position: absolute;
+    border-radius: 9px;
+    background-color: rgba(68,159,223,0.2);
+    margin-left: 50px;
+    bottom: 250px;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+}
+
+.bloque1 .mensaje h2{
+    margin-left: 20px;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.bloque1 .mensaje p{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.bloque1 .mensaje button{
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    color: #5B9ACD;
+}
+
+
+
+.tendencias{
+    height: 800px;
+    font-size: 30px;
+    text-align: center;
+    color: #5B9ACD;
+}
+
+.tendenciascontenedor{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+}
+.tendenciasbloque1{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tendenciasbloque1 .tarjetas1{
+    width: 440px;
+    height: 400px;
+}
+
+.tendenciasbloque1 .tarjetas1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.tendenciasbloque1 .tarjetas2{
+    width: 440px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 0;
+}
+
+.tendenciasbloque1 .tarjetas2 .tarjetas2a{
+    width: 440px;
+    height: 190px;
+}
+
+.tendenciasbloque1 .tarjetas2 .tarjetas2a img{ 
+    width: 100%;
+    height: 100%;
+}
+
+.tendenciasbloque1 .tarjetas2 .tarjetas2b{
+    width: 440px;
+    height: 190px;
+}
+
+.tendenciasbloque1 .tarjetas2 .tarjetas2b img{ 
+    width: 100%;
+    height: 100%;
+}
+
+.tendenciasbloque2{
+    width: 900px;
+    height: 200px;
+}
+
+.tendenciasbloque2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.monturas{
+    height: 800px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 120px;
+    color: #5B9ACD;
+}
+.monturas .estmonturas {
+    margin-bottom: 20px;
+}
+
+.monturas h2{
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.monturas .estmonturas h3{
+    font-size: 20px;
+    margin-left: 160px;
+    text-align: left;
+}
+
+.monturas .estmonturas img{
+    height: 160px;
+}
+
+
+.cristales{
+    height: 800px;
+    font-size: 30px;
+    text-align: center;
+    color: #5B9ACD;
+}
+
+.cristales img{
+    width: 80%;
+}
+
+.nosotros{
+    height: 800px;
+    width: 80%;
+}
+
+
+@media screen and (max-width: 960px) {
+    
+    .navfija .logo{
+        margin-left: 5px;
+    }
+    .navfija .opciones a{
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+
+    .navfija .registro a{
+        margin-right: 15px;
+        font-size: 15px;
+        font-weight:normal;
+        padding: 5px;
+    }
+
+    .bloque1 .logoblanco{
+        right: -10px;
+        top: -100px;
+        width: 350px;
+        height: 350px;
+    }
+    
+    .bloque1 .mensaje{
+        margin-left: 50px;
+        bottom: 250px;
+        width: 450px;
+        height: 180px;
+        padding: 15px;
+    }
+
+
+    .bloque1 .mensaje h2{
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    .bloque1 .mensaje p{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .bloque1 .mensaje button{
+        margin-left: 10px;
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    
+
+    .tendencias{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .tendenciascontenedor{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction:column;
+        gap: 5px ;
+    }
+
+    .tendenciasbloque1{
+        width: 700px;
+        height: 300px;
+        gap: 50px;
+    }
+    
+    .tendenciasbloque1 .tarjetas1{
+        width: 340px;
+        height: 300px;
+    }
+    
+    .tendenciasbloque1 .tarjetas1 img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tendenciasbloque1 .tarjetas2{
+        width: 340px;
+        height: 300px;
+        gap:5px;
+        margin-top: 0;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2a{
+        width: 340px;
+        height: 150px;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2a img{ 
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2b{
+        width: 340px;
+        height: 150px;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2b img{ 
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tendenciasbloque2{
+        width: 700px;
+        height: 100px;
+    }
+    
+    .tendenciasbloque2 img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    
+}
