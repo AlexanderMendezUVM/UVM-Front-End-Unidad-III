@@ -9,9 +9,10 @@ section[id] {
 
 body{
     font-family: sans-serif;
-    width: 99,9%;
-    height: 580px;
+    width: 100vw;
+    height: 100vh;
     background-color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 header{
@@ -29,6 +30,10 @@ header{
 
 .navfija .logo{
     margin-left: 20px;
+}
+
+.navfija .iconomenu{
+    display: none;
 }
 
 .navfija .opciones a{
@@ -50,9 +55,8 @@ header{
     color:#5B9ACD;
 }
 
-
 .principal{
-    height: 680px;
+    height: 100%;
     position: relative;
     z-index: -10;
 }
@@ -62,7 +66,7 @@ header{
     display: flex;
     flex-direction:row;
     width: 100%;
-    height: 500px;
+    height: 85vh;
     /*background-image: url("./img/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;*/
@@ -82,7 +86,7 @@ header{
     border-radius: 9px;
     background-color: rgba(68,159,223,0.2);
     margin-left: 50px;
-    bottom: 250px;
+    bottom: 150px;
     width: 500px;
     height: 200px;
     padding: 20px;
@@ -189,6 +193,28 @@ header{
 }
 
 
+.tendenciasbloque2 .position{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -58%);
+}
+
+.tendenciasbloque2 .carrusel {
+	background-image: url("./img/ray-bantendencias.png");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	animation: animate 6s infinite;
+}
+
+@keyframes animate {
+	25% {background-image: url("./img/pradatendencias.webp");}
+	50% {background-image: url("./img/Oakleytendencias.jpg");}
+	75% {background-image: url("./img/tommyhilfigertendencias.jpg");}
+	100% {background-image: url("./img/ray-bantendencias.png");}
+}
 
 
 .monturas{
@@ -223,6 +249,7 @@ header{
     font-size: 30px;
     text-align: center;
     color: #5B9ACD;
+    margin: auto;
 }
 
 .cristales img{
@@ -230,8 +257,14 @@ header{
 }
 
 .nosotros{
+    margin: auto;
+    display: block;
     height: 800px;
-    width: 80%;
+    width: 100%;
+}
+.nosotros .imgnosotros img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -261,12 +294,11 @@ header{
     
     .bloque1 .mensaje{
         margin-left: 50px;
-        bottom: 250px;
-        width: 450px;
+        bottom: 150px;
+        width: 400px;
         height: 180px;
         padding: 15px;
     }
-
 
     .bloque1 .mensaje h2{
         margin-left: 10px;
@@ -285,7 +317,6 @@ header{
         padding: 10px 10px;
     }
     
-
     .tendencias{
         font-size: 20px;
         text-align: center;
@@ -294,15 +325,12 @@ header{
     .tendenciascontenedor{
         width: 100%;
         height: 75%;
-        display: flex;
-        flex-direction:column;
-        gap: 5px ;
+        gap: 5px;
     }
-
     .tendenciasbloque1{
-        width: 700px;
-        height: 300px;
-        gap: 50px;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
     }
     
     .tendenciasbloque1 .tarjetas1{
@@ -319,12 +347,11 @@ header{
         width: 340px;
         height: 300px;
         gap:5px;
-        margin-top: 0;
     }
     
     .tendenciasbloque1 .tarjetas2 .tarjetas2a{
         width: 340px;
-        height: 150px;
+        height: 145px;
     }
     
     .tendenciasbloque1 .tarjetas2 .tarjetas2a img{ 
@@ -334,7 +361,7 @@ header{
     
     .tendenciasbloque1 .tarjetas2 .tarjetas2b{
         width: 340px;
-        height: 150px;
+        height: 145px;
     }
     
     .tendenciasbloque1 .tarjetas2 .tarjetas2b img{ 
@@ -343,8 +370,9 @@ header{
     }
     
     .tendenciasbloque2{
-        width: 700px;
-        height: 100px;
+        width: 680px;
+        height: 350px;
+        top: 5px;
     }
     
     .tendenciasbloque2 img{
@@ -353,16 +381,252 @@ header{
     }
     
     
+    .tendenciasbloque2 .position{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -58%);
+    }
+    
+    .tendenciasbloque2 .carrusel {
+        background-image: url("./img/ray-bantendencias.png");
+        background-size: cover;
+        height: 90%;
+        width: 100%;
+        animation: animate 6s infinite;
+    }
+    
+    @keyframes animate {
+        25% {background-image: url("./img/pradatendencias.webp");}
+        50% {background-image: url("./img/Oakleytendencias.jpg");}
+        75% {background-image: url("./img/tommyhilfigertendencias.jpg");}
+        100% {background-image: url("./img/ray-bantendencias.png");}
+    }
+    
+    
+.monturas{
+    height: 750px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.monturas .estmonturas {
+    margin-bottom: 15px;
+}
+
+.monturas h2{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.monturas .estmonturas h3{
+    font-size: 14px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.monturas .estmonturas img{
+    width: 90%;
+    height: 70%;
+}
+
+.cristales{
+    display: inline-block;
+    height: 800px;
+    font-size: 25px;
+}
+
+.cristales img{
+    width: 75%;
+}
 
 
-
-
-
+.nosotros{
+    height:600px;
+    width: 100%;
+}
+.nosotros .imgnosotros{
+    width: 100%;
+    height: 100%;
+}
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
+    
+    .navfija .iconomenu{
+        margin-left: 3px;
+        display: inline;
+    }
+    .navfija .opciones a{
+        display:none;
+    }
+
+    .navfija .registro a{
+        margin-right: 15px;
+        font-size: 15px;
+        font-weight:normal;
+        padding: 5px;
+    }
+
+    .bloque1 .logoblanco{
+        right: -10px;
+        top: -90px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .bloque1 .mensaje{
+        margin-left: 30px;
+        bottom: 130px;
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .bloque1 .mensaje h2{
+        margin-left: 6px;
+        font-size: 25px;
+    }
+    
+    .bloque1 .mensaje p{
+        font-size: 14px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .bloque1 .mensaje button{
+        margin-left: 10px;
+        font-size: 13px;
+        padding: 9px 9px;
+    }
+    
+    .tendencias{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .tendenciascontenedor{
+        width: 100%;
+        height: 65%;
+        gap: 4px;
+    }
+
+    .tendenciasbloque1{
+        width: 85%;
+        height: 85%;
+        gap: 8px;
+    }
+    .tendenciasbloque1 .tarjetas1{
+        width: 300px;
+        height: 280px;
+    }
+    
+    .tendenciasbloque1 .tarjetas1 img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tendenciasbloque1 .tarjetas2{
+        width: 300px;
+        height: 280px;
+        gap:5px;
+        margin-top: 0;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2a{
+        width: 300px;
+        height: 135px;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2a img{ 
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2b{
+        width: 300px;
+        height: 135px;
+    }
+    
+    .tendenciasbloque1 .tarjetas2 .tarjetas2b img{ 
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tendenciasbloque2{
+        width: 550px;
+        height: 130px;
+    }
+    
+    .tendenciasbloque2 img{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .tendenciasbloque2 .position{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -58%);
+    }
+    
+    .tendenciasbloque2 .carrusel {
+        background-image: url("./img/ray-bantendencias.png");
+        background-size: cover;
+        height: 95%;
+        width: 98%;
+        border-radius: 10px;
+        animation: animate 6s infinite;
+    }
+    
+    @keyframes animate {
+        25% {background-image: url("./img/pradatendencias.webp");}
+        50% {background-image: url("./img/Oakleytendencias.jpg");}
+        75% {background-image: url("./img/tommyhilfigertendencias.jpg");}
+        100% {background-image: url("./img/ray-bantendencias.png");}
+    }
+    
+    .monturas{
+        height: 450px;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .monturas .estmonturas {
+        margin-bottom: 15px;
+    }
+    
+    .monturas h2{
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .monturas .estmonturas h3{
+        font-size: 14px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .monturas .estmonturas img{
+        width: 80%;
+        height: 60%;
+    }
     
 
+    .cristales{
+        height: 800px;
+        font-size: 20px;
+    }
     
+    .cristales img{
+        width: 65%;
+    }
+    
+    
+    .nosotros{
+        height:550px;
+        width: 100%;
+    }
+    .nosotros .imgnosotros{
+        width: 100%;
+        height: 100%;
+    }
+
 }
